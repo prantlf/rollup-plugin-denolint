@@ -1,0 +1,95 @@
+{
+  "name": "rollup-plugin-denolint",
+  "version": "1.0.0",
+  "description": "A Rollup plugin to lint entry points and all imported files with denolint.",
+  "author": "Ferdinand Prantl <prantlf@gmail.com> (http://prantl.tk)",
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/prantlf/rollup-plugin-denolint/blob/master/LICENSE"
+    }
+  ],
+  "homepage": "http://github.com/prantlf/rollup-plugin-denolint/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prantlf/rollup-plugin-denolint.git"
+  },
+  "bugs": {
+    "url": "http://github.com/prantlf/rollup-plugin-denolint/issues"
+  },
+  "type": "module",
+  "module": "lib/index.js",
+  "main": "lib/index.cjs",
+  "types": "lib/index.d.ts",
+  "exports": {
+    "require": "./lib/index.cjs",
+    "import": "./lib/index.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "prepare": "rollup -c",
+    "lint": "denolint",
+    "check": "node test/index.cjs && node test",
+    "cover": "node test/index.cjs && c8 node test",
+    "test": "denolint && node test/index.cjs && c8 node test"
+  },
+  "c8": {
+    "check-coverage": true,
+    "reporter": [
+      "text",
+      "lcov"
+    ],
+    "branches": 100,
+    "lines": 100,
+    "functions": 100,
+    "statements": 100
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/github",
+        {
+          "failComment": false
+        }
+      ],
+      "@semantic-release/git"
+    ]
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "^4.2.1",
+    "libdenolint": "^1.1.5"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "c8": "^7.12.0",
+    "denolint": "^1.1.4",
+    "rollup": "^2.79.1",
+    "rollup-plugin-denolint": "link:",
+    "tehanu": "^1.0.1",
+    "tehanu-repo-coco": "^1.0.0"
+  },
+  "peerDependencies": {
+    "rollup": "^2"
+  },
+  "keywords": [
+    "rollup",
+    "plugin",
+    "rollup-plugin",
+    "eslint",
+    "denolint",
+    "deno-lint",
+    "deno",
+    "lint"
+  ]
+}
