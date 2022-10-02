@@ -1,5 +1,4 @@
 import { Plugin } from 'rollup'
-import { CreateFilter } from '@rollup/pluginutils';
 
 interface Rules {
   /**
@@ -28,13 +27,13 @@ interface Options {
    * List of source file patterns to include.
    * @default ['** /*.js', '** /*.jsx', '** /*.ts', '** /*.tsx']
    */
-  include?: Parameters<CreateFilter>[]
+  include?: string[] | string
 
   /**
    * List of source file patterns or a regex to exclude.
-   * @default ['** /node_modules/**']
+   * @default /node_modules/
    */
-  exclude?: Parameters<CreateFilter>[]
+  exclude?: string[] | string | regex
 
   /**
    * Config file to load the tag, rule inclusion and exclusion lists from.

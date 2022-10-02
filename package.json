@@ -35,9 +35,9 @@
   "scripts": {
     "prepare": "rollup -c",
     "lint": "denolint",
-    "check": "node test/index.cjs && node test",
-    "cover": "node test/index.cjs && c8 node test",
-    "test": "denolint && node test/index.cjs && c8 node test"
+    "check": "teru test/index.cjs && teru-esm test/*.js",
+    "cover": "teru test/index.cjs && teru-esm test/*.js",
+    "test": "denolint && teru test/index.cjs && c8 teru-esm test/*.js"
   },
   "c8": {
     "check-coverage": true,
@@ -77,7 +77,8 @@
     "rollup": "^2.79.1",
     "rollup-plugin-denolint": "link:",
     "tehanu": "^1.0.1",
-    "tehanu-repo-coco": "^1.0.0"
+    "tehanu-repo-coco": "^1.0.0",
+    "tehanu-teru": "^1.0.0"
   },
   "peerDependencies": {
     "rollup": "^2"

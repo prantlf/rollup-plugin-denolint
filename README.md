@@ -35,7 +35,7 @@ yarn add -D rollup-plugin-denolint
 Create a `rollup.config.js` [configuration file] and import the plugin:
 
 ```js
-import { minify } from 'rollup-plugin-denolint'
+import { denolint } from 'rollup-plugin-denolint'
 
 export default {
   input: 'src/index.js',
@@ -59,14 +59,14 @@ The following options can be passed in an object to the plugin function to chang
 
 ### `include`
 
-Type: `string[]`<br>
+Type: `string[] | string`<br>
 Default: `['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx']`
 
 List of source file patterns to include.
 
 ### `exclude`
 
-Type: `string[] | regex`<br>
+Type: `string[] string | | regex`<br>
 Default: `/node_modules/`
 
 List of source file patterns or a regex to exclude.
@@ -140,6 +140,24 @@ Default: `[]`
 
 List of rules to exclude from all or recommended ones.
 
+## Alternative
+
+Instead of checking the source files as they are processed, you can check all sources, when the bundler starts. It resembles more how the [command-line `denolint`] works and you can reuse the `files.include` and `files.exclude` configuration from `.denolint.json`:
+
+```js
+import { denolintAll } from 'rollup-plugin-denolint'
+
+export default {
+  input: 'src/index.js',
+  output: { file: 'dist/main.js', format: 'iife', sourcemap: true },
+  plugins: [
+    denolintAll()
+  ]
+}
+```
+
+Optoins `include`, `exclude`, `configFile`, `formatter`, `throwOnWarning`, `throwOnError` are recognised. Options `include`, `exclude` override `files.include` and `files.exclude` from `.denolint.json` and have the same meaning. They are not passed to `rollup`.
+
 ## Contributing
 
 In lieu of a formal styleguide, take care to maintain the existing coding style. Lint and test your code.
@@ -153,6 +171,7 @@ Licensed under the [MIT License].
 [MIT License]: http://en.wikipedia.org/wiki/MIT_License
 [Rollup]: https://rollupjs.org/
 [denolint]: https://github.com/prantlf/denolint/tree/master/packages/libdenolint#readme
+[@rollup/plugin-eslint]: https://github.com/rollup/plugins/tree/master/packages/eslint#readme
 [Node.js]: https://nodejs.org/
 [NPM]: https://www.npmjs.com/
 [PNPM]: https://pnpm.io/
@@ -160,3 +179,4 @@ Licensed under the [MIT License].
 [configuration file]: https://www.rollupjs.org/guide/en/#configuration-files
 [command-line]: https://www.rollupjs.org/guide/en/#command-line-reference
 [programmatically]: https://www.rollupjs.org/guide/en/#javascript-api
+[command-line `denolint`]: https://github.com/prantlf/denolint/tree/master/packages/denolint#readme
