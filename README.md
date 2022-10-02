@@ -7,7 +7,7 @@
 
 A [Rollup] plugin to lint entry points and all imported files with [denolint].
 
-A lot faster than [@rollup/plugin-eslint], handling both JavaScript and TypeScript sources.
+A lot faster than [@rollup/plugin-eslint], handling both JavaScript and TypeScript sources. Use [webpack-loader-denolint] for [Webpack]. Or simpler, just the [command-line `denolint`].
 
 ## Synopsis
 
@@ -44,7 +44,7 @@ export default {
     denolint({
       exclude: ['tests'],
       rules: {
-        exclude: ['no-unused-vars'],
+        exclude: ['no-unused-vars']
       }
     })
   ]
@@ -172,6 +172,9 @@ Licensed under the [MIT License].
 [Rollup]: https://rollupjs.org/
 [denolint]: https://github.com/prantlf/denolint/tree/master/packages/libdenolint#readme
 [@rollup/plugin-eslint]: https://github.com/rollup/plugins/tree/master/packages/eslint#readme
+[webpack-loader-denolint]: https://github.com/prantlf/webpack-loader-denolint#readme
+[Webpack]: https://webpack.js.org/
+[command-line `denolint`]: https://github.com/prantlf/denolint/tree/master/packages/denolint#readme
 [Node.js]: https://nodejs.org/
 [NPM]: https://www.npmjs.com/
 [PNPM]: https://pnpm.io/
@@ -179,4 +182,3 @@ Licensed under the [MIT License].
 [configuration file]: https://www.rollupjs.org/guide/en/#configuration-files
 [command-line]: https://www.rollupjs.org/guide/en/#command-line-reference
 [programmatically]: https://www.rollupjs.org/guide/en/#javascript-api
-[command-line `denolint`]: https://github.com/prantlf/denolint/tree/master/packages/denolint#readme
