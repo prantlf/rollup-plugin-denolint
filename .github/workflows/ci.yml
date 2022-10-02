@@ -1,8 +1,13 @@
 name: Test or Release
 
 on:
-  - push
-  - pull_request
+  push:
+    tags-ignore:
+      - '**'
+    paths-ignore:
+      - '**/*.md'
+      - LICENSE
+  pull_request:
 
 jobs:
   test-or-release:
