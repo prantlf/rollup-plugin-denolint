@@ -3,8 +3,7 @@
     "**/.git": true,
     "**/.DS_Store": true,
     "**/*.map": true,
-    "**/coverage": true,
-    "/test/out.js": true
+    "**/coverage": true
   },
   "search.exclude": {
     "**/*.log": true,
