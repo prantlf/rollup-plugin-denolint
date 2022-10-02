@@ -4,6 +4,7 @@ specifiers:
   '@rollup/pluginutils': ^4.2.1
   '@semantic-release/changelog': ^6.0.1
   '@semantic-release/git': ^10.0.1
+  '@types/node': ^18.7.23
   c8: ^7.12.0
   denolint: ^1.1.4
   libdenolint: ^1.1.5
@@ -12,6 +13,7 @@ specifiers:
   tehanu: ^1.0.1
   tehanu-repo-coco: ^1.0.0
   tehanu-teru: ^1.0.0
+  typescript: ^4.8.4
 
 dependencies:
   '@rollup/pluginutils': 4.2.1
@@ -20,6 +22,7 @@ dependencies:
 devDependencies:
   '@semantic-release/changelog': 6.0.1
   '@semantic-release/git': 10.0.1
+  '@types/node': 18.7.23
   c8: 7.12.0
   denolint: 1.1.4
   rollup: 2.79.1
@@ -27,6 +30,7 @@ devDependencies:
   tehanu: 1.0.1
   tehanu-repo-coco: 1.0.0
   tehanu-teru: 1.0.0_tehanu@1.0.1
+  typescript: 4.8.4
 
 packages:
 
@@ -280,6 +284,10 @@ packages:
 
   /@types/istanbul-lib-coverage/2.0.4:
     resolution: {integrity: sha512-z/QT1XN4K4KYuslS23k62yDIDLwLFkzxOuMplDtObz0+y7VqJCaO2o+SPwHCvLFZh7xazvvoor2tA/hPz9ee7g==}
+    dev: true
+
+  /@types/node/18.7.23:
+    resolution: {integrity: sha512-DWNcCHolDq0ZKGizjx2DZjR/PqsYwAcYUJmfMWqtVU2MBMG5Mo+xFZrhGId5r/O5HOuMPyQEcM6KUBp5lBZZBg==}
     dev: true
 
   /aggregate-error/3.1.0:
@@ -848,6 +856,12 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+    dev: true
+
+  /typescript/4.8.4:
+    resolution: {integrity: sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
     dev: true
 
   /universalify/2.0.0:

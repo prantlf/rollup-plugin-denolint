@@ -20,9 +20,9 @@ interface Rules {
    exclude?: string[]
 }
 
-declare type Formatter = (messages: string[], id: string, source: string) => string[];
+declare type DenoLintFormatter = (messages: string[], id: string, source: string) => string[];
 
-interface Options {
+interface DenoLintOptions {
   /**
    * List of source file patterns to include.
    * @default ['** /*.js', '** /*.jsx', '** /*.ts', '** /*.tsx']
@@ -33,10 +33,10 @@ interface Options {
    * List of source file patterns or a regex to exclude.
    * @default /node_modules/
    */
-  exclude?: string[] | string | regex
+  exclude?: string[] | string | RegExp
 
   /**
-   * Config file to load the tag, rule inclusion and exclusion lists from.
+   * Config file to load the tag and rule inclusion and exclusion lists from.
    * File inclusion and exclusion lists are ignored. Use `include` and `exclude`
    * options of this plugin.
    * @default '.denolint.json'
@@ -71,7 +71,55 @@ interface Options {
    * Custom warning and error formatter.
    * @default stylish
    */
-  formatter?: Formatter;
+  formatter?: DenoLintFormatter
 }
 
-export function denolint(options?: Options): Plugin
+declare type DenoLintAllFormatter = (messages: string) => string;
+
+interface DenoLintAllOptions {
+  /**
+   * Paths to source files to include. Overrides `files.include`.
+   * @default undefined
+   */
+  include?: string[]
+
+  /**
+   * Paths to source files to exclude. Overrides `files.exclude`.
+   * @default undefined
+   */
+  exclude?: string[]
+
+  /**
+   * Config file to load the tag, file and rule inclusion and exclusion lists from.
+   * @default '.denolint.json'
+   */
+  configFile?: string
+
+  /**
+   * Do not look for `.denolint.json` by default.
+   * @default false
+   */
+  ignoreConfig?: boolean
+
+  /**
+   * Throw an error and abort if any warnings were reported.
+   * @default false
+   */
+  throwOnWarning?: boolean
+
+  /**
+   * Throw an error and abort if source file parsing failed fatally.
+   * @default true
+   */
+  throwOnError?: boolean
+ 
+  /**
+   * Custom warning and error formatter.
+   * @default stylish
+   */
+  formatter?: DenoLintAllFormatter
+}
+
+export function denolint(options?: DenoLintOptions): Plugin
+
+export function denolintAll(options?: DenoLintAllOptions): Plugin

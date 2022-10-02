@@ -15,7 +15,7 @@ test('pass', async () => {
     input: 'test/samples/pass/ultimate.js',
     plugins: [denolintAll({
       exclude: ['test/samples/warn'],
-      configFile: 'test/.denolint.json'
+      ignoreConfig: true
     })] 
   })
 })
