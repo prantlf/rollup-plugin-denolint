@@ -43,7 +43,7 @@ test('warn silently', async () => {
 test('fail', async () => {
   await rejects(rollup({
     input: 'test/samples/fail/ultimate.txt',
-    plugins: [denolint({ ignoreConfig: true, include: ['**/*.txt'] }), text()] 
+    plugins: [denolint({ ignoreConfig: true, include: ['**/*.txt'] }), text()]
   }))
 })
 
@@ -52,7 +52,7 @@ test('fail silently', async () => {
     input: 'test/samples/fail/ultimate.txt',
     plugins: [denolint({
       ignoreConfig: true, include: ['**/*.txt'], throwOnError: false
-    }), text()] 
+    }), text()]
   })
 })
 
@@ -99,7 +99,7 @@ test('formatter of errors', async () => {
         params = { errors, id, source }
         return errors
       }
-    }), text()] 
+    }), text()]
   }))
   strictEqual(params.errors.length, 1)
   ok(params.id.endsWith('test/samples/fail/ultimate.txt'))

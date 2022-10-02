@@ -74,7 +74,7 @@ interface DenoLintOptions {
   formatter?: DenoLintFormatter
 }
 
-declare type DenoLintAllFormatter = (messages: string) => string;
+declare type DenoLintAllFormatter = (messages: string[]) => string[];
 
 interface DenoLintAllOptions {
   /**
