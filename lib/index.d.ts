@@ -66,7 +66,13 @@ interface DenoLintOptions {
    * @default true
    */
   throwOnError?: boolean
- 
+
+  /**
+   * Format of the warning messages.
+   * @default stylish
+   */
+  format?: 'compact' | 'pretty'
+
   /**
    * Custom warning and error formatter.
    * @default stylish
@@ -112,7 +118,13 @@ interface DenoLintAllOptions {
    * @default true
    */
   throwOnError?: boolean
- 
+
+  /**
+   * Format of the warning messages.
+   * @default stylish
+   */
+  format?: 'compact' | 'pretty'
+
   /**
    * Custom warning and error formatter.
    * @default stylish

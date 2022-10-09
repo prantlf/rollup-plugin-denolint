@@ -106,6 +106,13 @@ Default: `true`
 
 Throw an error and abort if source file parsing failed fatally.
 
+### `format`
+
+Type: `string`<br>
+Default: `'pretty'`
+
+Format of the warning messages. Either `compact` or `pretty` (default).
+
 ### `formatter`
 
 Type: `boolean`<br>
@@ -156,7 +163,7 @@ export default {
 }
 ```
 
-Optoins `include`, `exclude`, `configFile`, `formatter`, `throwOnWarning`, `throwOnError` are recognised. Options `include`, `exclude` override `files.include` and `files.exclude` from `.denolint.json` and have the same meaning. They are not passed to `rollup`.
+Options `include`, `exclude`, `configFile`, `format`, `formatter`, `throwOnWarning`, `throwOnError` are recognised. Options `include`, `exclude` override `files.include` and `files.exclude` from `.denolint.json` and have the same meaning. They are not passed to `rollup`.
 
 ## Contributing
 

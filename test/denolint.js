@@ -47,6 +47,13 @@ test('fail', async () => {
   }))
 })
 
+test('fail compact', async () => {
+  await rejects(rollup({
+    input: 'test/samples/fail/ultimate.txt',
+    plugins: [denolint({ format: 'compact', ignoreConfig: true, include: ['**/*.txt'] }), text()]
+  }))
+})
+
 test('fail silently', async () => {
   await rollup({
     input: 'test/samples/fail/ultimate.txt',
@@ -72,7 +79,7 @@ test('explicit rules', async () => {
   })
 })
 
-test('formatter of warnings', async () => {
+test('formatter of pretty warnings', async () => {
   let params
   await rejects(rollup({
     input: 'test/samples/warn/ultimate.js',
@@ -85,11 +92,31 @@ test('formatter of warnings', async () => {
     })] 
   }))
   strictEqual(params.warnings.length, 2)
+  ok(/\n.+\n/g.test(params.warnings[0]))
   ok(params.id.endsWith('test/samples/warn/ultimate.js'))
   strictEqual(typeof params.source, 'string')
 })
 
-test('formatter of errors', async () => {
+test('formatter of compact warnings', async () => {
+  let params
+  await rejects(rollup({
+    input: 'test/samples/warn/ultimate.js',
+    plugins: [denolint({
+      ignoreConfig: true,
+      format: 'compact',
+      formatter: (warnings, id, source) => {
+        params = { warnings, id, source }
+        return warnings
+      }
+    })] 
+  }))
+  strictEqual(params.warnings.length, 2)
+  ok(!/\n.+\n/g.test(params.warnings[0]))
+  ok(params.id.endsWith('test/samples/warn/ultimate.js'))
+  strictEqual(typeof params.source, 'string')
+})
+
+test('formatter of pretty errors', async () => {
   let params
   await rejects(rollup({
     input: 'test/samples/fail/ultimate.txt',
@@ -102,6 +129,26 @@ test('formatter of errors', async () => {
     }), text()]
   }))
   strictEqual(params.errors.length, 1)
+  ok(!/\n.+\n/g.test(params.errors[0]))
+  ok(params.id.endsWith('test/samples/fail/ultimate.txt'))
+  strictEqual(typeof params.source, 'string')
+})
+
+test('formatter of compact errors', async () => {
+  let params
+  await rejects(rollup({
+    input: 'test/samples/fail/ultimate.txt',
+    plugins: [denolint({
+      ignoreConfig: true, include: ['**/*.txt'],
+      format: 'compact',
+      formatter: (errors, id, source) => {
+        params = { errors, id, source }
+        return errors
+      }
+    }), text()]
+  }))
+  strictEqual(params.errors.length, 1)
+  ok(!/\n.+\n/g.test(params.errors[0]))
   ok(params.id.endsWith('test/samples/fail/ultimate.txt'))
   strictEqual(typeof params.source, 'string')
 })

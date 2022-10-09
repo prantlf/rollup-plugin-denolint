@@ -38,3 +38,10 @@ test('warn silently', async () => {
     })] 
   })
 })
+
+test('missing config', async () => {
+  await rejects(rollup({
+    input: 'test/samples/pass/ultimate.js',
+    plugins: [denolintAll({ configFile: 'missing', format: 'compact' })] 
+  }))
+})

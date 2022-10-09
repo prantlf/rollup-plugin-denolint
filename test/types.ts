@@ -21,6 +21,7 @@ test('Type declarations for TypeScript', () => {
   denolint({ rules: { exclude: [''] } })
   denolint({ throwOnWarning: false })
   denolint({ throwOnError: false })
+  denolint({ format: 'compact' })
   denolint({ formatter: (messages: string[], _id: string, _source: string): string[] => messages })
 
   denolintAll()
@@ -33,5 +34,6 @@ test('Type declarations for TypeScript', () => {
   denolintAll({ ignoreConfig: true })
   denolintAll({ throwOnWarning: false })
   denolintAll({ throwOnError: false })
+  denolintAll({ format: 'compact' })
   denolintAll({ formatter: (messages: string[]): string[] => messages })
 })
