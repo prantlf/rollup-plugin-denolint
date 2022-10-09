@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/prantlf/rollup-plugin-denolint/compare/v1.1.1...v1.2.0) (2022-10-09)
+
+
+### Bug Fixes
+
+* Fix TypeScript types for the custom formatter ([c1ecbf7](https://github.com/prantlf/rollup-plugin-denolint/commit/c1ecbf7473bd3271eaab30373859bce439944f90))
+
+
+### Features
+
+* Support pretty and compact messages ([cf1f078](https://github.com/prantlf/rollup-plugin-denolint/commit/cf1f078820bb03cbd2207b323d6c30667bf0d4c3))
+
 ## [1.1.1](https://github.com/prantlf/rollup-plugin-denolint/compare/v1.1.0...v1.1.1) (2022-10-02)
 
 
