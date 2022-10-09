@@ -8,6 +8,7 @@
   "search.exclude": {
     "**/*.log": true,
     "**/node_modules": true,
+    "lib/index.cjs": true,
     "pnpm-lock.yaml": true
   }
 }
