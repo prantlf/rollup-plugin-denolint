@@ -1,14 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@rollup/pluginutils': ^4.2.1
+  '@rollup/pluginutils': ^5.0.2
   '@semantic-release/changelog': ^6.0.1
   '@semantic-release/git': ^10.0.1
-  '@types/node': ^18.8.3
+  '@types/node': ^18.11.7
   c8: ^7.12.0
-  denolint: ^2.0.2
-  libdenolint: ^2.0.2
-  rollup: ^2.79.1
+  denolint: ^2.0.4
+  libdenolint: ^2.0.4
+  rollup: ^3.2.3
   rollup-plugin-denolint: 'link:'
   tehanu: ^1.0.1
   tehanu-repo-coco: ^1.0.0
@@ -16,16 +16,16 @@ specifiers:
   typescript: ^4.8.4
 
 dependencies:
-  '@rollup/pluginutils': 4.2.1
-  libdenolint: 2.0.2
+  '@rollup/pluginutils': 5.0.2_rollup@3.2.3
+  libdenolint: 2.0.4
 
 devDependencies:
   '@semantic-release/changelog': 6.0.1
   '@semantic-release/git': 10.0.1
-  '@types/node': 18.8.3
+  '@types/node': 18.11.7
   c8: 7.12.0
-  denolint: 2.0.2
-  rollup: 2.79.1
+  denolint: 2.0.4
+  rollup: 3.2.3
   rollup-plugin-denolint: 'link:'
   tehanu: 1.0.1
   tehanu-repo-coco: 1.0.0
@@ -38,8 +38,8 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@denolint/denolint-darwin-arm64/2.0.2:
-    resolution: {integrity: sha512-525ifX9L4gcvXeMVm6G7/1x56T6Z7T/uDXaR5QdBih+w8dtrqwDf5GeEwzlGG3CmqEkZ/3DUmX1EiGlNydvDDw==}
+  /@denolint/denolint-darwin-arm64/2.0.4:
+    resolution: {integrity: sha512-RfpLM4QVeaVr/OOD7vJ8Dm6QrISCjl9hvqB5BwyaYqNu6pTna2y9Rtv8NCheoBZfj73iGLfhMe4z23xGQwnozA==}
     engines: {node: '>= 12'}
     cpu: [arm64]
     os: [darwin]
@@ -47,8 +47,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/denolint-darwin-x64/2.0.2:
-    resolution: {integrity: sha512-/T1gPLjjnEJhTY07eJKkZlfyppcceNQlDerx/5DmFSmn8SqjOqNA34HnvUU86FCKiGA3qpezMR59EIhHXj5dLA==}
+  /@denolint/denolint-darwin-x64/2.0.4:
+    resolution: {integrity: sha512-5lNKYHmPoh9GYLfyhVh0Uskarmw2ZFzSd+aj080s+wW74/5buzt8hc1gR307hIV/Yk6HJwYv2l3Rmrc7aWwIOg==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [darwin]
@@ -56,8 +56,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/denolint-freebsd-x64/2.0.2:
-    resolution: {integrity: sha512-p49TNY38+sgz0aGEoevvKO8RKqlVUwzREUtE8YFNZnen1mTzUzyO2MwVBVmhnyxqCZmLR3Ibi/YXCqLN2MGKNQ==}
+  /@denolint/denolint-freebsd-x64/2.0.4:
+    resolution: {integrity: sha512-uvlYwaxoAwvSWDGdrcQ0K1ilrj2Yh6eeesUMAIvJTyBINtl5RcvhMQuTTpIad79+dCWoMZopL0Np2PFdaH56JQ==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [freebsd]
@@ -65,8 +65,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/denolint-linux-arm-gnueabihf/2.0.2:
-    resolution: {integrity: sha512-ezwcyQgIkIDGDQUQkd+0Egm8qgjwcvP8Ylvk/94BpnscyfArfFM9dgIhCMQEQtxnDMqPYtU1a1SEiVqoaInqZw==}
+  /@denolint/denolint-linux-arm-gnueabihf/2.0.4:
+    resolution: {integrity: sha512-T7qqhFhguRA7rRT+VR/q5lQJkWRxnnZ0Li1IIK9mUzPUaQuWLq46yV8dAwmYT448BbEdqoVjKeGjB9PtVlUDPw==}
     engines: {node: '>= 12'}
     cpu: [arm]
     os: [linux]
@@ -74,8 +74,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/denolint-linux-arm64-gnu/2.0.2:
-    resolution: {integrity: sha512-F6mnK1Ox+TvoXanHKJ4xD5rsOExLZEEzj65hFW/y4c3mrcFQ2izwDjlk+HswSx7/gVWPOmag3L6EaDiYuw/akA==}
+  /@denolint/denolint-linux-arm64-gnu/2.0.4:
+    resolution: {integrity: sha512-z0OVgImdmdLQIjzkuZfK+OzGp+4+eklBZq2m2leY4eArmA2LuflO8OIp5FcEV4YzmM+RoSAE2CbFX1GtBO7hhg==}
     engines: {node: '>= 12'}
     cpu: [arm64]
     os: [linux]
@@ -83,8 +83,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/denolint-linux-x64-gnu/2.0.2:
-    resolution: {integrity: sha512-H9+NJIpud7x3Z8woJ37zxbPNHWOo9FnGraXdKzQkzX2L8Cl8I2HDphZrqfBaHEkfBWakGkQea5pzpJdTkXIE1g==}
+  /@denolint/denolint-linux-x64-gnu/2.0.4:
+    resolution: {integrity: sha512-giNPeL/NXYteEYjIBPAq7mCHanz241u9in4il43f0K9QO482sMnMiG/fkkO5JjEsaAiHx4UzqSN+Z59DSeurbw==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [linux]
@@ -92,8 +92,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/denolint-linux-x64-musl/2.0.2:
-    resolution: {integrity: sha512-F3SwyWS4srRQj57f8tNJaWOs0JKYDojIAsqzwt/FC8x0tgjkSUhF3COybN57N7DENCQqwYYsaY2jvL835/srSQ==}
+  /@denolint/denolint-linux-x64-musl/2.0.4:
+    resolution: {integrity: sha512-e+QLk04pdeb9qrKN25zzGcx8gF7Cb3I9sh36SGU9AyaXmICP/yay7FclVXxuxVrU/scQCI3xK0vp/2UfMYH++Q==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [linux]
@@ -101,8 +101,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/denolint-win32-arm64-msvc/2.0.2:
-    resolution: {integrity: sha512-qz+ZcGRHcDeS3eFzKp1y3HtypV4zn+w/65PQQABgahlbEZc5mpKXBLd5EiLItM8LhTUSthWtFFiLiPk9aEkWuA==}
+  /@denolint/denolint-win32-arm64-msvc/2.0.4:
+    resolution: {integrity: sha512-nqJhLNsbvN+RkxHnWZI7KkoYFODqDBJkfaRup8/cTtXjtrcizjRSMmAREDFdjZ4vt5W0vjZ8wnL7fQLSyZaShg==}
     engines: {node: '>= 12'}
     cpu: [arm64]
     os: [win32]
@@ -110,8 +110,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/denolint-win32-ia32-msvc/2.0.2:
-    resolution: {integrity: sha512-E/C0m3JBlzKH14y9Z0uBcJskNX+6yRdEOM3f9PemUY3NY6DDZil+5NrQDKOybJjwXLGiQPlfe0TDrrge49ZxeQ==}
+  /@denolint/denolint-win32-ia32-msvc/2.0.4:
+    resolution: {integrity: sha512-HGLRxZLQAUwcWmymUgALZPN1IKFvyIGA2dLDOi9EfASzB2c48TkMAuYdcXwm+oa0N11Lf5oD8xtQ4LvYukAWMQ==}
     engines: {node: '>= 12'}
     cpu: [ia32]
     os: [win32]
@@ -119,8 +119,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/denolint-win32-x64-msvc/2.0.2:
-    resolution: {integrity: sha512-Ao13v0BIuFAXwIUBQvnIaIS5JdBHSXQHFBC3KxzhJbhNg1cRVu+M6vsC2RIhvTHO2XfT70skHCXku1YNVsJIlA==}
+  /@denolint/denolint-win32-x64-msvc/2.0.4:
+    resolution: {integrity: sha512-PtTF4Zq3RN4oEaUcn8DmVFhJzDBWHcn37rcPqXlftPhjvFspNKXzPxKC5/RgoBGTx6ZsFusFOPBvpQzqbbkdZA==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [win32]
@@ -128,8 +128,8 @@ packages:
     dev: true
     optional: true
 
-  /@denolint/libdenolint-darwin-arm64/2.0.2:
-    resolution: {integrity: sha512-QdY7gQGEhAHmkVLJh84qpdA4iaBXdFRMi/oZxA6FN6dY0uVFy9JkKUQtanI4SX3MYCw042ndYbi6imlqZv6hXg==}
+  /@denolint/libdenolint-darwin-arm64/2.0.4:
+    resolution: {integrity: sha512-y9wBrOn+uHrjrkNvagqiZZlzQViN+OYwz0gkcPLD7JB7T4rVKOX0dc8l2OGzOPtpmbMlaCzbgfjqHV3lM0n0Iw==}
     engines: {node: '>= 12'}
     cpu: [arm64]
     os: [darwin]
@@ -137,8 +137,8 @@ packages:
     dev: false
     optional: true
 
-  /@denolint/libdenolint-darwin-x64/2.0.2:
-    resolution: {integrity: sha512-6UUafC1sGvkV3/IEAnaDAfFuuijOkDMuotm1oxZ2AmzaWEgVQpNrAdD2CE9829vhPkOEoSwKJHaBjQixbdkD1w==}
+  /@denolint/libdenolint-darwin-x64/2.0.4:
+    resolution: {integrity: sha512-JZIpF0ZgU9JL0g9vxSJi8GlYamAwbyMlMxXci26iNGu88jgPC9mAEl3uD7BRQDZSRz3qfX73GtdmMf/+0IQ9lQ==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [darwin]
@@ -146,8 +146,8 @@ packages:
     dev: false
     optional: true
 
-  /@denolint/libdenolint-freebsd-x64/2.0.2:
-    resolution: {integrity: sha512-BkHrSq53VUB9cf/gTCZtX0DKchc2WkJsUAoVN/mLSLXoV/RLasD50acAf85wYYP1exap0nDFcQyWySIrVtV4SQ==}
+  /@denolint/libdenolint-freebsd-x64/2.0.4:
+    resolution: {integrity: sha512-U8Rmue233St3LzGWi85SZ8ENV1tJl8pPLUmIc1TwpmbH1NDz2UJxoVmCQuY74+deFR5i55sD1ThzH6FwqKtY5A==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [freebsd]
@@ -155,8 +155,8 @@ packages:
     dev: false
     optional: true
 
-  /@denolint/libdenolint-linux-arm-gnueabihf/2.0.2:
-    resolution: {integrity: sha512-EvUV3BG6G2uljKDwT/92tS0pquDb0N0W1YvECzZGSQ0ne4FjbDlFJoM/JIWSrJ9XAYnq8TxmIToECwELSq8Jmg==}
+  /@denolint/libdenolint-linux-arm-gnueabihf/2.0.4:
+    resolution: {integrity: sha512-GAcIqyzTgmR0n32fi+FGDSvT3Me0q+0YLnIy20wgYP0pytn17KlfVEWTSIqRccfFkedB/LZpQl+kxpdsfmRS3g==}
     engines: {node: '>= 12'}
     cpu: [arm]
     os: [linux]
@@ -164,8 +164,8 @@ packages:
     dev: false
     optional: true
 
-  /@denolint/libdenolint-linux-arm64-gnu/2.0.2:
-    resolution: {integrity: sha512-xpQpF/rgpjx6OpfmAYfcWPnAGKLKt/GnyqsvNLdgg+qW6SUOb8EpIfXfSptT64v7ze16AXZI6bydZhwvlaL/rQ==}
+  /@denolint/libdenolint-linux-arm64-gnu/2.0.4:
+    resolution: {integrity: sha512-1ROobjqy1glMqB2gwNzbc5XMXe1MV1IL7GGzmulT2qgMzTROqnaGUFA10bLS7FdSkrEfGQE6HSzYfi8Y/kOztA==}
     engines: {node: '>= 12'}
     cpu: [arm64]
     os: [linux]
@@ -173,8 +173,8 @@ packages:
     dev: false
     optional: true
 
-  /@denolint/libdenolint-linux-x64-gnu/2.0.2:
-    resolution: {integrity: sha512-MZTMAsMIvc4LYiT5L+dWFToz38rbRr1OZxvSNc62KEgcLaftF44fI0sfNcT+96fdscOZpc2GFJO2PTkgClkWzw==}
+  /@denolint/libdenolint-linux-x64-gnu/2.0.4:
+    resolution: {integrity: sha512-febg2WBHzmSUoUIOSLuWNqncDRad5hbSE8+0Mp00ssP94XfJVUBsYjGSWfajWkxxTFzXMEfqk1MpMWWVHfcvZQ==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [linux]
@@ -182,8 +182,8 @@ packages:
     dev: false
     optional: true
 
-  /@denolint/libdenolint-linux-x64-musl/2.0.2:
-    resolution: {integrity: sha512-MRrKP25IgLFMw0uOjEpNiBwwqW57ZIgnARkEmRuoPTTqTDYtXznLKI8181f4Qo0CKDQUuSzZsqL628dUp9i/Gw==}
+  /@denolint/libdenolint-linux-x64-musl/2.0.4:
+    resolution: {integrity: sha512-VmQ6vIrDzxUMdpqKTH+cQbSrAAQ5wclGYpJGulsJ7L2O7UvtMayAkcNDIswzA4/DX8KbwDmh/itzdcBriggFOA==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [linux]
@@ -191,8 +191,8 @@ packages:
     dev: false
     optional: true
 
-  /@denolint/libdenolint-win32-arm64-msvc/2.0.2:
-    resolution: {integrity: sha512-WUmyflNfUmd5rhyoxU3rQYmyx7iVipvF9JXo6ZWK/dTDs7x9ANlqNVkvdn7Pk35oLlNfWnGNROUlWuYP5/SQ2g==}
+  /@denolint/libdenolint-win32-arm64-msvc/2.0.4:
+    resolution: {integrity: sha512-8GXouKOj6FrGiD5Otomu2vJe4hAjYRlwJGk5lO2po7sDbzVwgMUQfgBn1vielNbBS8vPvJAp6/T+q9T2QYoJiw==}
     engines: {node: '>= 12'}
     cpu: [arm64]
     os: [win32]
@@ -200,8 +200,8 @@ packages:
     dev: false
     optional: true
 
-  /@denolint/libdenolint-win32-ia32-msvc/2.0.2:
-    resolution: {integrity: sha512-0LMPnJzKJdvCoOIrFwovOrp4Qpb/DFUZSCxmRSdGLRQ+4PhWHlL1ToVeNajq6VL3laHI/FQZZFz+V3o0+8ehlw==}
+  /@denolint/libdenolint-win32-ia32-msvc/2.0.4:
+    resolution: {integrity: sha512-/gUWUQ9gTZB4Mf0jNz7exGksF8T+vXrCSsvYqHo55YPRWMrJt/Z4ZLM2xQjt3C4HAGKAh/Dx/npGPewHEfSu8w==}
     engines: {node: '>= 12'}
     cpu: [ia32]
     os: [win32]
@@ -209,8 +209,8 @@ packages:
     dev: false
     optional: true
 
-  /@denolint/libdenolint-win32-x64-msvc/2.0.2:
-    resolution: {integrity: sha512-EqGRmeao/5etEAbkOCCBuJLukyQIOpIN1q9QaqqJliIXp05Xr0diqwm4f80RSLSSNyQsISEhE+MM8tovGIFpsQ==}
+  /@denolint/libdenolint-win32-x64-msvc/2.0.4:
+    resolution: {integrity: sha512-bvQuUo7DROsORWTYB6gcSAWAui6crC6cPt9IH6mv4h2nOcJi78rJ/MQeg90EDxNkfCt58P2sZuVzHvHYEO2Iaw==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [win32]
@@ -239,12 +239,19 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@rollup/pluginutils/4.2.1:
-    resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==}
-    engines: {node: '>= 8.0.0'}
+  /@rollup/pluginutils/5.0.2_rollup@3.2.3:
+    resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
     dependencies:
+      '@types/estree': 1.0.0
       estree-walker: 2.0.2
       picomatch: 2.3.1
+      rollup: 3.2.3
     dev: false
 
   /@semantic-release/changelog/6.0.1:
@@ -282,12 +289,16 @@ packages:
       - supports-color
     dev: true
 
+  /@types/estree/1.0.0:
+    resolution: {integrity: sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==}
+    dev: false
+
   /@types/istanbul-lib-coverage/2.0.4:
     resolution: {integrity: sha512-z/QT1XN4K4KYuslS23k62yDIDLwLFkzxOuMplDtObz0+y7VqJCaO2o+SPwHCvLFZh7xazvvoor2tA/hPz9ee7g==}
     dev: true
 
-  /@types/node/18.8.3:
-    resolution: {integrity: sha512-0os9vz6BpGwxGe9LOhgP/ncvYN5Tx1fNcd2TM3rD/aCGBkysb+ZWpXEocG24h6ZzOi13+VB8HndAQFezsSOw1w==}
+  /@types/node/18.11.7:
+    resolution: {integrity: sha512-LhFTglglr63mNXUSRYD8A+ZAIu5sFqNJ4Y2fPuY7UlrySJH87rRRlhtVmMHplmfk5WkoJGmDjE9oiTfyX94CpQ==}
     dev: true
 
   /aggregate-error/3.1.0:
@@ -407,21 +418,21 @@ packages:
       ms: 2.1.2
     dev: true
 
-  /denolint/2.0.2:
-    resolution: {integrity: sha512-gWCUT5Dtw9A3LUFKVL+FW7KVXVqmroI6nLFfFb/W3U9kkpMAHA+pS84nGhQQpDP/iuGgi6sMQNWZsah9uwqMMw==}
+  /denolint/2.0.4:
+    resolution: {integrity: sha512-6JZdBOLEs9ioYbeBG0/jYue65F8xJLK9inHLpgr+P/x6b24tUM+Fdr0+HNOmw6CENLnXPRejuf89eOVyUr3tuA==}
     engines: {node: '>= 12'}
     requiresBuild: true
     optionalDependencies:
-      '@denolint/denolint-darwin-arm64': 2.0.2
-      '@denolint/denolint-darwin-x64': 2.0.2
-      '@denolint/denolint-freebsd-x64': 2.0.2
-      '@denolint/denolint-linux-arm-gnueabihf': 2.0.2
-      '@denolint/denolint-linux-arm64-gnu': 2.0.2
-      '@denolint/denolint-linux-x64-gnu': 2.0.2
-      '@denolint/denolint-linux-x64-musl': 2.0.2
-      '@denolint/denolint-win32-arm64-msvc': 2.0.2
-      '@denolint/denolint-win32-ia32-msvc': 2.0.2
-      '@denolint/denolint-win32-x64-msvc': 2.0.2
+      '@denolint/denolint-darwin-arm64': 2.0.4
+      '@denolint/denolint-darwin-x64': 2.0.4
+      '@denolint/denolint-freebsd-x64': 2.0.4
+      '@denolint/denolint-linux-arm-gnueabihf': 2.0.4
+      '@denolint/denolint-linux-arm64-gnu': 2.0.4
+      '@denolint/denolint-linux-x64-gnu': 2.0.4
+      '@denolint/denolint-linux-x64-musl': 2.0.4
+      '@denolint/denolint-win32-arm64-msvc': 2.0.4
+      '@denolint/denolint-win32-ia32-msvc': 2.0.4
+      '@denolint/denolint-win32-x64-msvc': 2.0.4
     dev: true
 
   /dir-glob/3.0.1:
@@ -501,7 +512,6 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
-    dev: true
     optional: true
 
   /get-caller-file/2.0.5:
@@ -616,21 +626,21 @@ packages:
       graceful-fs: 4.2.10
     dev: true
 
-  /libdenolint/2.0.2:
-    resolution: {integrity: sha512-VU/zcOtEdcATyFDf+GdMSgFcy4O2+dB/G9ELyv/d9J0nCfjrwgjwrdhwI55IlNV84tboGBbhTmUFfBvOKLmafQ==}
+  /libdenolint/2.0.4:
+    resolution: {integrity: sha512-jkrhegFfq9sRpt1ERW4yPSmzaE9FzYmjE+YbnqYHRDKqTfL6qOP+8/Oq22evdP8El5obTzXG4PIKbUesgfoZEw==}
     engines: {node: '>= 12'}
     requiresBuild: true
     optionalDependencies:
-      '@denolint/libdenolint-darwin-arm64': 2.0.2
-      '@denolint/libdenolint-darwin-x64': 2.0.2
-      '@denolint/libdenolint-freebsd-x64': 2.0.2
-      '@denolint/libdenolint-linux-arm-gnueabihf': 2.0.2
-      '@denolint/libdenolint-linux-arm64-gnu': 2.0.2
-      '@denolint/libdenolint-linux-x64-gnu': 2.0.2
-      '@denolint/libdenolint-linux-x64-musl': 2.0.2
-      '@denolint/libdenolint-win32-arm64-msvc': 2.0.2
-      '@denolint/libdenolint-win32-ia32-msvc': 2.0.2
-      '@denolint/libdenolint-win32-x64-msvc': 2.0.2
+      '@denolint/libdenolint-darwin-arm64': 2.0.4
+      '@denolint/libdenolint-darwin-x64': 2.0.4
+      '@denolint/libdenolint-freebsd-x64': 2.0.4
+      '@denolint/libdenolint-linux-arm-gnueabihf': 2.0.4
+      '@denolint/libdenolint-linux-arm64-gnu': 2.0.4
+      '@denolint/libdenolint-linux-x64-gnu': 2.0.4
+      '@denolint/libdenolint-linux-x64-musl': 2.0.4
+      '@denolint/libdenolint-win32-arm64-msvc': 2.0.4
+      '@denolint/libdenolint-win32-ia32-msvc': 2.0.4
+      '@denolint/libdenolint-win32-x64-msvc': 2.0.4
     dev: false
 
   /locate-path/6.0.0:
@@ -753,13 +763,12 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rollup/2.79.1:
-    resolution: {integrity: sha512-uKxbd0IhMZOhjAiD5oAFp7BqvkA4Dv47qpOCtaNvng4HBwdbWtdOh8f5nZNuk2rp51PMGk3bzfWu5oayNEuYnw==}
-    engines: {node: '>=10.0.0'}
+  /rollup/3.2.3:
+    resolution: {integrity: sha512-qfadtkY5kl0F5e4dXVdj2D+GtOdifasXHFMiL1SMf9ADQDv5Eti6xReef9FKj+iQPR2pvtqWna57s/PjARY4fg==}
+    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
-    dev: true
 
   /safe-buffer/5.1.2:
     resolution: {integrity: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==}

@@ -30,7 +30,7 @@
     "lib"
   ],
   "engines": {
-    "node": ">=14"
+    "node": ">=14.18"
   },
   "scripts": {
     "prepare": "rollup -c",
@@ -66,16 +66,16 @@
     ]
   },
   "dependencies": {
-    "@rollup/pluginutils": "^4.2.1",
-    "libdenolint": "^2.0.2"
+    "@rollup/pluginutils": "^5.0.2",
+    "libdenolint": "^2.0.4"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
-    "@types/node": "^18.8.3",
+    "@types/node": "^18.11.7",
     "c8": "^7.12.0",
-    "denolint": "^2.0.2",
-    "rollup": "^2.79.1",
+    "denolint": "^2.0.4",
+    "rollup": "^3.2.3",
     "rollup-plugin-denolint": "link:",
     "tehanu": "^1.0.1",
     "tehanu-repo-coco": "^1.0.0",
@@ -83,7 +83,7 @@
     "typescript": "^4.8.4"
   },
   "peerDependencies": {
-    "rollup": "^2"
+    "rollup": "^2 || ^3"
   },
   "keywords": [
     "rollup",
