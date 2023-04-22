@@ -129,7 +129,7 @@ test('formatter of pretty errors', async () => {
     }), text()]
   }))
   strictEqual(params.errors.length, 1)
-  ok(!/\n.+\n/g.test(params.errors[0]))
+  ok(/\n.+\n/g.test(params.errors[0]))
   ok(params.id.endsWith('test/samples/fail/ultimate.txt'))
   strictEqual(typeof params.source, 'string')
 })
