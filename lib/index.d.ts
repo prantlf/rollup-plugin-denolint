@@ -1,6 +1,6 @@
 import { Plugin } from 'rollup'
 
-interface Rules {
+export interface DenoLintRules {
   /**
    * Use all rules if set to `true`, otherwise only the recommended ones.
    * @default false
@@ -20,9 +20,9 @@ interface Rules {
    exclude?: string[]
 }
 
-declare type DenoLintFormatter = (messages: string[], id: string, source: string) => string[];
+export type DenoLintFormatter = (messages: string[], id: string, source: string) => string[];
 
-interface DenoLintOptions {
+export interface DenoLintOptions {
   /**
    * List of source file patterns to include.
    * @default ['** /*.js', '** /*.jsx', '** /*.ts', '** /*.tsx']
@@ -53,7 +53,7 @@ interface DenoLintOptions {
    * Rules to include or exclude. If specified, the config file will be ignored.
    * @default undefined
    */
-  rules?: Rules
+  rules?: DenoLintRules
 
   /**
    * Throw an error and abort if any warnings were reported.
@@ -80,9 +80,9 @@ interface DenoLintOptions {
   formatter?: DenoLintFormatter
 }
 
-declare type DenoLintAllFormatter = (messages: string[]) => string[];
+export type DenoLintAllFormatter = (messages: string[]) => string[];
 
-interface DenoLintAllOptions {
+export interface DenoLintAllOptions {
   /**
    * Paths to source files to include. Overrides `files.include`.
    * @default undefined

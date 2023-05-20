@@ -67,15 +67,15 @@
   },
   "dependencies": {
     "@rollup/pluginutils": "^5.0.2",
-    "libdenolint": "^2.0.9"
+    "libdenolint": "^2.0.10"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@types/node": "^18.15.13",
+    "@types/node": "^20.2.1",
     "c8": "^7.13.0",
-    "denolint": "^2.0.9",
-    "rollup": "^3.20.7",
+    "denolint": "^2.0.10",
+    "rollup": "^3.22.0",
     "rollup-plugin-denolint": "link:",
     "tehanu": "^1.0.1",
     "tehanu-repo-coco": "^1.0.0",
