@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/prantlf/rollup-plugin-denolint/compare/v1.2.2...v1.2.3) (2023-05-20)
+
+
+### Bug Fixes
+
+* Upgrade dependencies ([1c4a1fd](https://github.com/prantlf/rollup-plugin-denolint/commit/1c4a1fd49c72cfaeed6fcba5f251088756b270aa))
+
 ## [1.2.2](https://github.com/prantlf/rollup-plugin-denolint/compare/v1.2.1...v1.2.2) (2023-04-22)
 
 
