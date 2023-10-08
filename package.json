@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-denolint",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "A Rollup plugin to lint entry points and all imported files with denolint.",
   "author": "Ferdinand Prantl <prantlf@gmail.com> (http://prantl.tk)",
   "license": "MIT",
